@@ -4,6 +4,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         if(document.querySelector(".mob-nav").classList.contains('opened')){
             document.querySelector(".mob-nav").classList.toggle('opened');
             document.querySelector("ul.nav").classList.toggle('opened');
+            document.body.classList.toggle('opened');
         }
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
@@ -44,4 +45,5 @@ document.addEventListener("keyup", e => {
 document.querySelector(".mob-nav").addEventListener("click", e => {
     document.querySelector(".mob-nav").classList.toggle('opened');
     document.querySelector("ul.nav").classList.toggle('opened');
+    document.body.classList.toggle('opened');
 });
