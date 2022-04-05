@@ -991,15 +991,22 @@ display: block;
 
 
 @media (max-width: 800px){
+  .modal-header .close-modal {right: 0;top: -20px;}
 
+  div#modal6 br + br {display: none;}
   main{
     background: url(../img/main-mob.jpg) center center/cover no-repeat;
   }
+  .modal-footer {height: 200px;position: relative;}
+
+  .modal-footer img {object-fit: cover;height: 100%;}
   .why-boxes {display: block;}
   ul.nav {
     display: none;
   }
-
+  .rr-title{
+    font-size: 18px
+  }
   #cursor{
     display: none
   }
