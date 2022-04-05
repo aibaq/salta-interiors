@@ -403,6 +403,7 @@ img{
 
 
 .about{
+  overflow: hidden;
   background: url(../img/about-bg.svg) left bottom no-repeat;
   padding-top: 80px;
 }
@@ -460,12 +461,12 @@ section.why-we h1 {
 }
 
 
-.portfolio ul li > img {
+.portfolio ul li .simpleParallax img {
   transition: all 0.35s ease-in-out 0s;
 }
 
-.portfolio ul li:hover > img {
-  transform: scale(1.1);
+.portfolio ul li:hover .simpleParallax img {
+  transform: scale(1.1)!important;
 }
 
 
@@ -989,8 +990,11 @@ display: block;
 }
 
 
-@media (max-width: 859px){
+@media (max-width: 800px){
 
+  main{
+    background: url(../img/main-mob.jpg) center center/cover no-repeat;
+  }
   .why-boxes {display: block;}
   ul.nav {
     display: none;
@@ -1013,7 +1017,9 @@ display: block;
   }
 
   main h1 {
-    font-size: 37px;
+    font-size: 36px;
+    letter-spacing: 0.06em;
+    font-weight: 300;
   }
 
   .main-images {
@@ -1039,9 +1045,6 @@ display: block;
     display: block;
   }
 
-  main {
-    min-height: 90vh;
-  }
 
   .header-right a:last-child {
     display: none;
@@ -1050,6 +1053,11 @@ display: block;
   section.portfolio {
     padding: 35px 0;
     background: transparent;
+  }
+
+  main h3{
+    letter-spacing: 0.01em;
+    font-size: 18px;
   }
 
   .portf-top h1, .about-top h1, .contacts h1 {
@@ -1078,6 +1086,14 @@ display: block;
 
   .portfolio ul li {
     margin-bottom: 32px;
+  }
+
+  .about{
+    padding-top: 0
+  }
+
+  .portfolio ul li{
+      min-height: 560px;
   }
 
   .portf-top, .about-top {
@@ -1148,6 +1164,7 @@ display: block;
 
   ul.nav {
     display: flex;
+    gap: 10px;
     position: fixed;
     left: 0;
     right: 0;
@@ -1159,6 +1176,7 @@ display: block;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 40px;
     opacity: 0;
     visibility: hidden;
     transition: all .3s ease-out;
@@ -1174,7 +1192,12 @@ display: block;
     z-index: 100;
     position: relative;
   }
-
+  section.why-we h1{
+    font-size: 37px;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px
+  }
   .mob-nav.opened {
     z-index: 12;
   }
@@ -1186,6 +1209,7 @@ display: block;
   ul.nav.opened {
     opacity: 1;
     visibility: visible;
+    gap: 30px;
   }
 
   section.services ul li > img {
@@ -1195,6 +1219,7 @@ display: block;
 
   section.services ul li {
     height: auto;
+    min-width: auto;  
   }
 
   section.services ul li .content {

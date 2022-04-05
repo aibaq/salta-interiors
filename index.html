@@ -13,6 +13,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js"></script>
 </head>
 <body>
 
@@ -653,6 +654,80 @@
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            if(document.querySelector(".mob-nav").classList.contains('opened')){
+                document.querySelector(".mob-nav").classList.toggle('opened');
+                document.querySelector("ul.nav").classList.toggle('opened');
+                document.body.classList.toggle('opened');
+            }
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    const openEls = document.querySelectorAll("[data-open]");
+    const closeEls = document.querySelectorAll("[data-close]");
+    const isVisible = "is-visible";
+
+    for (const el of openEls) {
+      el.addEventListener("click", function() {
+        const modalId = this.dataset.open;
+        document.getElementById(modalId).classList.add(isVisible);
+      });
+    }
+
+    for (const el of closeEls) {
+      el.addEventListener("click", function() {
+        this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+      });
+    }
+
+    document.addEventListener("click", e => {
+      if (e.target == document.querySelector(".modal.is-visible")) {
+        document.querySelector(".modal.is-visible").classList.remove(isVisible);
+      }
+    });
+
+    document.addEventListener("keyup", e => {
+      // if we press the ESC
+      if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
+        document.querySelector(".modal.is-visible").classList.remove(isVisible);
+      }
+    });
+
+    document.querySelector(".mob-nav").addEventListener("click", e => {
+        document.querySelector(".mob-nav").classList.toggle('opened');
+        document.querySelector("ul.nav").classList.toggle('opened');
+        document.body.classList.toggle('opened');
+    });
+
+    setTimeout(() => {
+        document.querySelector('.main-images').classList.add('anim');
+    }, 100)
+
+    var image = document.querySelectorAll('.list-portf img');
+    new simpleParallax(image, {
+    });
+
+    var main = document.querySelectorAll('.about img');
+    new simpleParallax(main,{
+        orientation:"up left",
+        // scale:1,
+        overflow:true,
+        delay: 0.6,
+        transition: 'cubic-bezier(0,0,0,1)'
+    });
+    var portf = document.querySelectorAll('.main-images img');
+    new simpleParallax(portf, {
+        overflow: true,
+        delay: .6,
+        transition: 'cubic-bezier(0,0,0,1)'
+    });
+
+  </script>
 </body>
 </html>
