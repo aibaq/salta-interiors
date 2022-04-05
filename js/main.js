@@ -47,3 +47,9 @@ document.querySelector(".mob-nav").addEventListener("click", e => {
     document.querySelector("ul.nav").classList.toggle('opened');
     document.body.classList.toggle('opened');
 });
+
+setTimeout(() => {
+    document.querySelector('.main-images').classList.add('anim');
+}, 100)
+
+

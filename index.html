@@ -31,9 +31,9 @@
         <li>
           <a href="#Services">Услуги</a>
         </li>
-        <!-- <li>
-          <a href="">Почему мы</a>
-        </li> -->
+        <li>
+          <a href="WhyWe">Почему мы</a>
+        </li>
         <li>
           <a href="#Contacts">Контакты</a>
         </li>
@@ -52,10 +52,8 @@
     <div class="container">
       <h1>Salta interiors</h1>
       <h3>Студия интерьерного дизайна в Астане</h3>
-      <a href="#Portfolio" class="line-link">
-        Наше портфолио
-        <br>
-        <img src="img/line.svg" alt="">
+      <a href="https://api.whatsapp.com/send/?phone=77473248892" class="btn">
+        <span>Связаться с нами</span>
       </a>
       <div class="main-images">
         <img src="img/main1.jpg" alt="">
@@ -144,6 +142,34 @@
     </div>
   </section>
 
+  <section id="WhyWe" class="why-we">
+    <div class="container">
+      <h1>Почему нам доверяют?</h1>
+      <div class="why-boxes">
+        <div class="box">
+          <span>1</span>
+          <h2>Эргономика</h2>
+          <p>Наши планировки всегда эргономичны и продуманы.  </p>
+        </div>
+        <div class="box">
+          <span>2</span>
+          <h2>Наш стиль</h2>
+          <p>Cоздаем авторский стиль под индивидуальность каждого заказчика. А самое главное интерьеры отличаются интересным сочетанием сразу нескольких стилей.</p>
+        </div>
+        <div class="box">
+          <span>3</span>
+          <h2>Высокое качество</h2>
+          <p>Нас отличают грамотные чертежи, красивые 3D визуализации и высокий уровень менеджмента.</p>
+        </div>
+        <div class="box">
+          <span>4</span>
+          <h2>Под ключ 100%</h2>
+          <p>Мы предоставляем полноценную услугу - от дизайна до комплектации.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="services" id="Services">
     <div class="container">
       <h1>
@@ -151,8 +177,8 @@
         Услуги
       </h1>
       <ul>
-        <li>
-          <img src="img/serv1.jpg" alt="">
+        <li class="open-modal" data-open="modal1">
+          <img src="img/serv-bg.jpg" alt="">
           <div class="content">
             <h2>Полный пакет</h2>
             <p>
@@ -160,14 +186,14 @@
               • 2-3 планировочных решений<br>
               • Пакет рабочих чертежей
             </p>
-            <button type="button" class="open-modal" data-open="modal1">
+            <button type="button">
               Подробнее
             </button>
             <div class="price">10 000 тг/кв.м</div>
           </div>
         </li>
-        <li>
-          <img src="img/serv1.jpg" alt="">
+        <li class="open-modal" data-open="modal2">
+          <img src="img/serv-bg.jpg" alt="">
           <div class="content">
             <h2>Без 3D визуализации</h2>
             <p>
@@ -175,14 +201,14 @@
               • 2-3 планировочных решений<br>
               • Пакет рабочих чертежей
             </p>
-            <button type="button" class="open-modal" data-open="modal1">
+            <button type="button">
               Подробнее
             </button>
             <div class="price">7 000 тг/кв.м</div>
           </div>
         </li>
-        <li>
-          <img src="img/serv1.jpg" alt="">
+        <li class="open-modal" data-open="modal3">
+          <img src="img/serv-bg.jpg" alt="">
           <div class="content">
             <h2>Рабочие чертежи</h2>
             <p>
@@ -191,14 +217,14 @@
               • Основные рачие чертежи: <br>
               - План монтажа-демонтажа ...
             </p>
-            <button type="button" class="open-modal" data-open="modal1">
+            <button type="button">
               Подробнее
             </button>
             <div class="price">3 500 тг/кв.м</div>
           </div>
         </li>
-        <li>
-          <img src="img/serv1.jpg" alt="">
+        <li class="open-modal" data-open="modal4">
+          <img src="img/serv-bg.jpg" alt="">
           <div class="content">
             <h2>Авторский надзор</h2>
             <p>
@@ -206,28 +232,28 @@
               • Проверка выполненных работ <br>
               • Надзор над своевременной поставкой товара
             </p>
-            <button type="button" class="open-modal" data-open="modal1">
+            <button type="button">
               Подробнее
             </button>
             <div class="price">150 000 тг/мес</div>
           </div>
         </li>
-        <li>
-          <img src="img/serv1.jpg" alt="">
+        <li class="open-modal" data-open="modal5">
+          <img src="img/serv-bg.jpg" alt="">
           <div class="content">
             <h2>Комплектация объекта</h2>
             <p>
               • Совместный поход по строительным магазинам <br>
               • Помощь в подборе мебели и чистовых материалов (парке...
             </p>
-            <button type="button" class="open-modal" data-open="modal1">
+            <button type="button">
               Подробнее
             </button>
             <div class="price">7 000 тг/час</div>
           </div>
         </li>
-        <li>
-          <img src="img/serv1.jpg" alt="">
+        <li class="open-modal" data-open="modal6">
+          <img src="img/serv-bg.jpg" alt="">
           <div class="content">
             <h2>консультация</h2>
             <p>
@@ -235,22 +261,22 @@
               • Анализ помещения <br>
               • Чек-лист необходимых элементов: мебель, освещение, шторы, декор
             </p>
-            <button type="button" class="open-modal" data-open="modal1">
+            <button type="button">
               Подробнее
             </button>
             <div class="price">от 70 000 тг</div>
           </div>
         </li>
-        <li>
-          <img src="img/serv1.jpg" alt="">
+        <li class="open-modal" data-open="modal7">
+          <img src="img/serv-bg.jpg" alt="">
           <div class="content">
             <h2>Планировочное решение</h2>
             <p>
-              • До 100 кв.м - 200 000 тг
-              • От 100 до 200 кв.м - 300 000 гт
+              • До 100 кв.м - 200 000 тг<br>
+              • От 100 до 200 кв.м - 300 000 тг<br>
               • От 200 до 500 кв.м - 400 000 тг
             </p>
-            <button type="button" class="open-modal" data-open="modal1">
+            <button type="button">
               Подробнее
             </button>
             <div class="price">Срок 7-14 дней</div>
@@ -322,12 +348,13 @@
       <section class="modal-content">
         <div class="modal-top">
           <div class="left">
-            <p>Обмер помещения <br>
-            2-3 планировочных решений <br>
-            Пакет рабочих чертежей <br>
-            Обмер помещения <br>
-            2-3 планировочных решений <br>
-            Пакет рабочих чертежей</p>
+            <p>
+            · Обмер помещения <br>
+            · 2-3 планировочных решений <br>
+            · Пакет рабочих чертежей <br>
+            · Обмер помещения <br>
+            · 2-3 планировочных решений <br>
+            · Пакет рабочих чертежей</p>
           </div>
           <div class="right">
             <p>
@@ -346,6 +373,278 @@
           </div>
         </div>
       </section>
+      <div class="text-center">
+        <a href="https://api.whatsapp.com/send/?phone=77473248892" class="btn"><span>Получить консультацию</span></a>
+      </div>
+      <div class="modal-footer">
+        <img src="img/modal1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal2" data-animation="slideInOutDown">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        Без 3d визуализации
+        <button class="close-modal" aria-label="close modal" data-close>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 8L8 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 8L24 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <section class="modal-content">
+        <div class="modal-top">
+          <div class="left">
+            <p>
+              · Обмер помещения <br>
+              · 2-3 планировочных решений <br>
+              · Пакет рабочих чертежей <br>
+              · Стилистический коллаж, определяющий концепцию <br>
+              · Ведомость чистовых материалов (смета) <br>
+              · Комплектация
+            </p>  
+          </div>
+          <div class="right">
+            <p>
+              Площадь
+              <span>от 50 кв/м</span>
+            </p>
+            <p>
+              Оплата
+              <span>50/50</span>
+            </p>
+            <p>
+              Срок
+              <span>20 раб. дней</span>
+            </p>
+            <h4>10 000 тг/кв.м</h4>
+          </div>
+        </div>
+      </section>
+      <div class="text-center">
+        <a href="https://api.whatsapp.com/send/?phone=77473248892" class="btn"><span>Получить консультацию</span></a>
+      </div>
+      <div class="modal-footer">
+        <img src="img/modal1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal3" data-animation="slideInOutDown">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        Рабочие чертежи
+        <button class="close-modal" aria-label="close modal" data-close>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 8L8 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 8L24 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <section class="modal-content">
+        <div class="modal-top">
+          <div class="left">
+            <p>
+              · Обмер помещения <br>
+              · 2-3 планировочных решений <br>
+              · Основные рабочие чертежи: <br>
+              - План монтажа - демонтажа <br>
+              - План расстановки мебели <br>
+              - Планировочное решение <br>
+              - План потолка <br>
+              - План освещения <br>
+              - План выключателей/розеток <br>
+            </p>  
+          </div>
+          <div class="right">
+            <p>
+              Площадь
+              <span>от 50 кв/м</span>
+            </p>
+            <p>
+              Оплата
+              <span>50/50</span>
+            </p>
+            <p>
+              Срок
+              <span>от 10 раб. дней</span>
+            </p>
+            <h4>10 000 тг/кв.м</h4>
+          </div>
+        </div>
+      </section>
+      <div class="text-center">
+        <a href="https://api.whatsapp.com/send/?phone=77473248892" class="btn"><span>Получить консультацию</span></a>
+      </div>
+      <div class="modal-footer">
+        <img src="img/modal1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal4" data-animation="slideInOutDown">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        Авторский надзор
+        <button class="close-modal" aria-label="close modal" data-close>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 8L8 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 8L24 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <section class="modal-content">
+        <div class="modal-top">
+          <div class="left">
+            <p>
+              · До 2х выездов в неделю <br>
+              · Проверка выполненных работ <br>
+              · Надзор над своевременной поставкой товара <br>
+              · Уточнение технических вопросов по чертежам <br>
+              · Разъяснение работы бригаде <br>
+              · Уведомления клиента о ходе ремонта
+            </p>  
+          </div>
+          <div class="right">
+            <h4>150 000 тг/мес</h4>
+          </div>
+        </div>
+      </section>
+      <div class="text-center">
+        <a href="https://api.whatsapp.com/send/?phone=77473248892" class="btn"><span>Получить консультацию</span></a>
+      </div>
+      <div class="modal-footer">
+        <img src="img/modal1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal5" data-animation="slideInOutDown">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        Комплектация объекта
+        <button class="close-modal" aria-label="close modal" data-close>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 8L8 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 8L24 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <section class="modal-content">
+        <div class="modal-top">
+          <div class="left">
+            <p>
+              · Совместный поход по строительным магазинам <br>
+              · Помощь в подборе мебели и чистовых материалов (паркет/ламинат, поитка, сантехника, покраска и т.д)
+            </p>  
+          </div>
+          <div class="right">
+            <h4>7 000 тг/час</h4>
+            <br>
+            <p><span style="line-height:1.2">Оплата разовая, по часовому тарифу *не более 3 часов в день, 2-3 раза в неделю</span></p>
+          </div>
+        </div>
+      </section>
+      <div class="text-center">
+        <a href="https://api.whatsapp.com/send/?phone=77473248892" class="btn"><span>Получить консультацию</span></a>
+      </div>
+      <div class="modal-footer">
+        <img src="img/modal1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal6" data-animation="slideInOutDown">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        Консультация дизайнера
+        <button class="close-modal" aria-label="close modal" data-close>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 8L8 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 8L24 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <section class="modal-content">
+        <div class="modal-top">
+          <div class="left">
+            <p>
+              <b class="rr-title">Offline консультация</b>
+              · Выезд на объект <br>
+              · Анализ помещения <br>
+              · Чек-лист необходимых элементов: мебель, освещение, шторы, декор
+              <br><br>
+            </p>  
+          </div>
+          <div class="right">
+            <p>
+              70 000 тг
+              <span>50-80 кв/м</span>
+            </p>
+            <p>
+              90 000 тг
+              <span>80/100 кв/м</span>
+            </p>
+            <p>
+              120 000 тг
+              <span>от 100 кв/м</span>
+            </p>
+            <p><span style="font-size: 15px;">Единоразовая оплата. Готовность 2-3 дня</span></p>
+          </div>
+        </div>
+      </section>
+      <div class="text-center">
+        <a href="https://api.whatsapp.com/send/?phone=77473248892" class="btn"><span>Получить консультацию</span></a>
+      </div>
+      <div class="modal-footer">
+        <img src="img/modal1.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal7" data-animation="slideInOutDown">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        Планировочное решение
+        <button class="close-modal" aria-label="close modal" data-close>
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 8L8 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 8L24 24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <section class="modal-content">
+        <div class="modal-top">
+          <div class="left">
+            <p>
+              <span>Срок разработки планировочного решения 7-14 рабочих дней</span>
+            </p>  
+          </div>
+          <div class="right">
+            <p>
+              70 000 тг
+              <span>до 100 кв/м</span>
+            </p>
+            <p>
+              300 000 тг
+              <span>100-200 кв/м</span>
+            </p>
+            <p>
+              400 000 тг
+              <span>200-300 кв/м</span>
+            </p>
+            <p>
+              500 000 тг
+              <span>300-500 кв/м</span>
+            </p>
+            <p><span style="font-size: 15px;">Свыше 500 кв/м сумма рассчитывается индивидуально</span></p>
+          </div>
+        </div>
+      </section>
+      <div class="text-center">
+        <a href="https://api.whatsapp.com/send/?phone=77473248892" class="btn"><span>Получить консультацию</span></a>
+      </div>
       <div class="modal-footer">
         <img src="img/modal1.jpg" alt="">
       </div>
