@@ -284,6 +284,88 @@ section.portfolio{
   align-items:center;
 }
 
+section.all-portf {
+  padding-top: 200px;
+  background: none;
+}
+
+.breadcrumbs {
+  margin-top: 150px;
+  z-index: 9;
+  position: relative;
+}
+
+.images-portf .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap: 24px;
+  align-items: center;
+}
+
+.main-prev{
+  min-height: 100vh;
+  padding-top: 200px;
+  padding-bottom: 48px;
+  background-attachment: fixed;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+  background-attachment:fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.main-prev .bottom{
+  margin-top: auto;
+  letter-spacing: 0.01em;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.main-prev .top {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+
+.main-prev h1{
+  font-size: 80px;
+  line-height: 91.8%;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.main-prev p{
+  max-width: 700px;
+  margin: 32px auto;
+}
+
+.breadcrumbs ul{
+  display: flex;
+  gap: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+
+.breadcrumbs ul p{
+  opacity: 0.5;
+}
+
+section.all-portf .portf-top{
+  display: block;
+  text-align: center;
+}
+
 .portf-top,
 .about-top{
   margin-bottom: 135px;
@@ -991,6 +1073,9 @@ display: block;
 
 
 @media (max-width: 800px){
+  .main-prev h1{
+    font-size: 30px
+  }
   .modal-header .close-modal {right: 0;top: -20px;}
 
   div#modal6 br + br {display: none;}

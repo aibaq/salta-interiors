@@ -12,11 +12,9 @@
   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="css/main.css?v=1234">
-  <script src="js/main.js?v=1234"></script>
+  <link rel="stylesheet" href="css/main.css?v=412">
 </head>
 <body>
-
   <header>
     <div class="container">
       <a href="/" class="logo">
@@ -33,7 +31,7 @@
           <a href="#Services">Услуги</a>
         </li>
         <li>
-          <a href="WhyWe">Почему мы</a>
+          <a href="#WhyWe">Почему мы</a>
         </li>
         <li>
           <a href="#Contacts">Контакты</a>
@@ -74,7 +72,7 @@
         </h1>
         <div class="right">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet sit semper aenean vitae morbi fringilla posuere nibh malesuada. </p>
-          <a href="" class="line-link">
+          <a href="portfolio.html" class="line-link">
             Все работы
             <br>
             <img src="img/line2.svg" alt="">
@@ -84,35 +82,35 @@
 
       <ul class="list-portf">
         <li>
-          <img src="img/portf2.jpg" alt="">
+          <img src="img/portf/5/prev.jpg" alt="">
           <div class="portf-content">
-            <h3>ЖК «Remizovka”</h3>
+            <h3>Kazmebel</h3>
             <p>Curabitur ullamcorper ultricies, tellus rhoncus tempus eget condimentum,sem quam semper liberoCurabitur ullamcorper ultricies, tellus rhoncus tempus eget </p>
-            <div class="arrow"><img src="img/arrow.svg" alt=""></div>
+            <a href="portfolio/kazmebel.html" class="arrow"><img src="img/arrow.svg" alt=""></a>
           </div>
         </li>
         <li>
-          <img src="img/portf1.jpg" alt="">
+          <img src="img/portf/4/prev.jpg" alt="">
           <div class="portf-content">
-            <h3>ЖК «Remizovka”</h3>
+            <h3>ЖК “4You”</h3>
             <p>Curabitur ullamcorper ultricies, tellus rhoncus tempus eget condimentum,sem quam semper liberoCurabitur ullamcorper ultricies, tellus rhoncus tempus eget </p>
-            <div class="arrow"><img src="img/arrow.svg" alt=""></div>
+            <a href="portfolio/4you.html" class="arrow"><img src="img/arrow.svg" alt=""></a>
           </div>
         </li>
         <li>
-          <img src="img/portf3.jpg" alt="">
+          <img src="img/portf/7/prev.jpg" alt="">
           <div class="portf-content">
-            <h3>ЖК «Remizovka”</h3>
+            <h3>ЖК “Arbat”</h3>
             <p>Curabitur ullamcorper ultricies, tellus rhoncus tempus eget condimentum,sem quam semper liberoCurabitur ullamcorper ultricies, tellus rhoncus tempus eget </p>
-            <div class="arrow"><img src="img/arrow.svg" alt=""></div>
+            <a href="portfolio/arbat.html" class="arrow"><img src="img/arrow.svg" alt=""></a>
           </div>
         </li>
         <li>
-          <img src="img/portf4.jpg" alt="">
+          <img src="img/portf/8/prev.jpg" alt="">
           <div class="portf-content">
-            <h3>ЖК «Remizovka”</h3>
+            <h3>ЖК “Hilltown”</h3>
             <p>Curabitur ullamcorper ultricies, tellus rhoncus tempus eget condimentum,sem quam semper liberoCurabitur ullamcorper ultricies, tellus rhoncus tempus eget </p>
-            <div class="arrow"><img src="img/arrow.svg" alt=""></div>
+            <a href="portfolio/hilltown.html" class="arrow"><img src="img/arrow.svg" alt=""></a>
           </div>
         </li>
       </ul>
@@ -653,81 +651,6 @@
       </div>
     </div>
   </div>
-
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            if(document.querySelector(".mob-nav").classList.contains('opened')){
-                document.querySelector(".mob-nav").classList.toggle('opened');
-                document.querySelector("ul.nav").classList.toggle('opened');
-                document.body.classList.toggle('opened');
-            }
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
-        });
-    });
-
-    const openEls = document.querySelectorAll("[data-open]");
-    const closeEls = document.querySelectorAll("[data-close]");
-    const isVisible = "is-visible";
-
-    for (const el of openEls) {
-      el.addEventListener("click", function() {
-        const modalId = this.dataset.open;
-        document.getElementById(modalId).classList.add(isVisible);
-      });
-    }
-
-    for (const el of closeEls) {
-      el.addEventListener("click", function() {
-        this.parentElement.parentElement.parentElement.classList.remove(isVisible);
-      });
-    }
-
-    document.addEventListener("click", e => {
-      if (e.target == document.querySelector(".modal.is-visible")) {
-        document.querySelector(".modal.is-visible").classList.remove(isVisible);
-      }
-    });
-
-    document.addEventListener("keyup", e => {
-      // if we press the ESC
-      if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
-        document.querySelector(".modal.is-visible").classList.remove(isVisible);
-      }
-    });
-
-    document.querySelector(".mob-nav").addEventListener("click", e => {
-        document.querySelector(".mob-nav").classList.toggle('opened');
-        document.querySelector("ul.nav").classList.toggle('opened');
-        document.body.classList.toggle('opened');
-    });
-
-    setTimeout(() => {
-        document.querySelector('.main-images').classList.add('anim');
-    }, 100)
-
-    var image = document.querySelectorAll('.list-portf img');
-    new simpleParallax(image, {
-    });
-
-    var main = document.querySelectorAll('.about img');
-    new simpleParallax(main,{
-        orientation:"up left",
-        // scale:1,
-        overflow:true,
-        delay: 0.6,
-        transition: 'cubic-bezier(0,0,0,1)'
-    });
-    var portf = document.querySelectorAll('.main-images img');
-    new simpleParallax(portf, {
-        overflow: true,
-        delay: .6,
-        transition: 'cubic-bezier(0,0,0,1)'
-    });
-
-  </script>
+  <script src="js/main.js?v=412"></script>
 </body>
 </html>
