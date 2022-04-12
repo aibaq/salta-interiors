@@ -262,10 +262,16 @@ body .main-images.anim img {
   text-align: center;
 }
 
-.insta-contacts{
+.insta-contacts a{
   display: flex;
   gap: 8px;
   align-items: center;
+}
+
+#whatsapp{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
 }
 
 .line-link img{
@@ -1073,8 +1079,16 @@ display: block;
 
 
 @media (max-width: 800px){
+
+  #whatsapp{
+    width: 40px;
+    height: 40px
+  }
   .main-prev h1{
     font-size: 30px
+  }
+  section.all-portf{
+    margin-top: 100px;
   }
   .modal-header .close-modal {right: 0;top: -20px;}
 
